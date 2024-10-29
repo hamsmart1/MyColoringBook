@@ -1,0 +1,164 @@
+/* สไตล์ Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px;
+}
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+}
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* สไตล์ส่วนปกและสินค้า */
+.cover-image-container {
+    text-align: center;
+    margin-top: 20px;
+}
+.cover-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 0; /* ลบ border-radius ออกเพื่อให้ชนขอบ */
+}
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #f1f1f1; /* สีเทา */
+    padding: 20px; /* เพิ่ม padding */
+    margin-top: 20px; /* ระยะห่างด้านบน */
+    border-radius: 10px; /* มุมมน */
+}
+.product {
+    border: 2px solid #ddd;
+    padding: 20px;
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* จัดกลางในแนวตั้ง */
+    justify-content: center; /* จัดกลางในแนวนอน */
+    margin: 10px; /* เพิ่ม margin เพื่อความสวยงาม */
+}
+.product h3 {
+    margin: 10px 0;
+}
+.product img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    border-radius: 5px;
+}
+.new-product {
+    border-color: #f39c12;
+}
+.badge {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 5px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.buy-button {
+    margin-top: 10px; /* เพิ่มระยะห่างระหว่างชื่อสินค้าและปุ่ม */
+    padding: 10px 20px; /* เพิ่ม padding ให้ปุ่ม */
+    font-size: 16px; /* ปรับขนาดตัวอักษรของปุ่ม */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่ออยู่เหนือปุ่ม */
+    border: none; /* ลบกรอบของปุ่ม */
+    background-color: #007BFF; /* สีพื้นหลังของปุ่ม */
+    color: white; /* สีตัวอักษร */
+    border-radius: 5px; /* ทำมุมให้ปุ่มกลม */
+    transition: background-color 0.3s; /* เพิ่มการเปลี่ยนสีเมื่อวางเมาส์ */
+}
+.buy-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+
+/* สไตล์ Promotion และ Contact */
+#promotion, #contact {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center; /* จัดตำแหน่งข้อความให้อยู่กลาง */
+    margin-top: 20px; /* ระยะห่างด้านบน */
+    font-family: "Raleway";
+    text-align: center;
+    font-size: 3em;
+}
+h2 {
+    text-align: center; /* จัดตำแหน่งข้อความให้อยู่กลาง */
+    margin-top: 20px; /* ระยะห่างด้านบน */
+    font-family: "Raleway";
+    text-align: center;
+    font-size: 3em;
+}
+
+h5 {
+    text-align: center; /* จัดตำแหน่งข้อความให้อยู่กลาง */
+    margin-top: 20px; /* ระยะห่างด้านบน */
+    font-family: "Raleway";
+    text-align: center;
+    font-size: 3em;
+
+}
+
+.promotion-image {
+    width: 100%; /* ยืดให้เต็มความกว้างของคอนเทนเนอร์ */
+    height: auto; /* ปรับความสูงตามอัตราส่วน */
+    max-width: 1000px; /* กำหนดความกว้างสูงสุด */
+    object-fit: cover; /* ปรับให้รูปภาพเต็มพื้นที่ โดยไม่ทำให้เบี้ยว */
+    border-radius: 10px; /* เพิ่มมุมมน */
+    padding: 10px;
+}
+.normalproduct-image{
+    width: 100%; /* ยืดให้เต็มความกว้างของคอนเทนเนอร์ */
+    height: auto; /* ปรับความสูงตามอัตราส่วน */
+    max-width: 1000px; /* กำหนดความกว้างสูงสุด */
+    object-fit: contain;/* ปรับให้รูปภาพเต็มพื้นที่ โดยไม่ทำให้เบี้ยว */
+    border-radius: 10px; /* เพิ่มมุมมน */
+    padding: 10px;
+}
+
+.newproduct5-image{
+width: 100%; /* ยืดให้เต็มความกว้างของคอนเทนเนอร์ */
+height: auto; /* ปรับความสูงตามอัตราส่วน */
+max-width: 1000px; /* กำหนดความกว้างสูงสุด */
+object-fit: contain;/* ปรับให้รูปภาพเต็มพื้นที่ โดยไม่ทำให้เบี้ยว */
+border-radius: 10px; /* เพิ่มมุมมน */
+padding: 10px;
+}
+
+.newproduct6-image{
+    width: 100%; /* ยืดให้เต็มความกว้างของคอนเทนเนอร์ */
+    height: auto; /* ปรับความสูงตามอัตราส่วน */
+    max-width: 1000px; /* กำหนดความกว้างสูงสุด */
+    object-fit: contain;/* ปรับให้รูปภาพเต็มพื้นที่ โดยไม่ทำให้เบี้ยว */
+    border-radius: 10px; /* เพิ่มมุมมน */
+    padding: 10px;
+    }
